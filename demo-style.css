@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+
+li, a, button {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navLink {
+    list-style: none;
+}
+
+.navLink li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLink li a {
+    transition: all .3s ease 0s;
+}
+
+.navLink li a:hover {
+    color: red;
+}
