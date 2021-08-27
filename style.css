@@ -2,19 +2,28 @@
     border: 1px solid red;
 }
 
-.backgroundIMG {
-    background-color: #cccccc;
-    height: 1500px;
+body {
+    background-color: #E5E5E5;
+}
+
+main {
+    background-color: #E5E5E5;
+    height: 1200px;
+}
+
+.logoBTN {
+    background-color: #E5E5E5;
+    border: none;
 }
 
 #logo {
     font-family: 'Rock Salt', cursive;
-    font-size: 3em;
+    font-size: 4em;
     color: #00517B;
     margin-right: auto;
 }
 
-#logo h2 {
+#logo h3 {
     padding: 0;
     margin: 0;
 }
@@ -26,26 +35,33 @@ header {
     padding: 10px 5%;
 }
 
-#navMenu ul {
+.navMenu ul {
     display: flex;
     margin: 10px 0 0 10px;
     padding: 0;
 }
 
-#navMenu li {
+.navMenu li {
     display: inline-block;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    word-spacing: 10px;
-    letter-spacing: 2px;
     list-style: none;
     padding-right: 15px;
 }
 
 a {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 900;
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    transition: .5s;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @keyframes flicker {
@@ -95,4 +111,31 @@ a {
     font-weight: 900;
     word-spacing: 8px;
     letter-spacing: 2px;
+}
+
+/*About Section*/
+
+section {
+    font-family: 'Rock Salt', cursive;
+    position: relative;
+    margin: 0 16% 0 21%;
+    height: 1000px;
+    background-color: whitesmoke;
+}
+
+h2 {
+    padding-left: 25px;
+    font-size: 5em;
+}
+
+.about p {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
 }
