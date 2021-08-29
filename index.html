@@ -58,8 +58,21 @@
         <h2 class="projectsHeader debug">"Projects&#8222;</h2>
     </section>
 
-    <section class="debug">
+    <section class="debug" id="contactSection">
         <h2 class="contactHeader debug">"Contact&#8222;</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label class="debug">Your Email:</label>
+            <input type="email" name="email"><br>
+            <label class="debug">Message:</label><textarea name="message"></textarea>
+            <br>
+            <button type="submit">Send</button>
+            </p>
+          </form>
     </section>
 
     <footer class="navMenu">
