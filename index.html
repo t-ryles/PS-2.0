@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Rock+Salt&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f11b863e94.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Logo.ico">
     <title>TajHakeem.Dev</title>
 </head>
 <body>
@@ -22,10 +23,10 @@
                 </button>
                 <nav id="navList">
                     <ul>
-                        <li><a class="debug" href="">About</a></li>
-                        <li><a class="debug" href="">Tech</a></li>
-                        <li><a class="debug" href="">Projects</a></li>
-                        <li><a class="debug" href="">Contact</a></li>
+                        <li><a class="headerLi debug" href="">About</a></li>
+                        <li><a class="headerLi debug" href="">Tech</a></li>
+                        <li><a class="headerLi debug" href="">Projects</a></li>
+                        <li><a class="headerLi debug" href="">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -59,16 +60,23 @@
     </section>
 
     <section class="debug" id="contactSection">
-        <h2 class="contactHeader debug">"Contact&#8222;</h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <h2 id="contactHeader debug">"Contact Me&#8222;</h2>
+        <form id="contactForm" name="contact" method="POST" data-netlify="true">
             <p>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br>
-            <label class="debug">Your Email:</label>
-            <input type="email" name="email"><br>
-            <label class="debug">Message:</label><textarea name="message"></textarea>
+                <div class="formInput debug">
+                    <label for="fname"></label>
+                    <input placeholder="First Name:" type="text" id="fname" name="fname" required="true" size="45">
+                </div>
+                <div class="formInput debug">
+                    <label for="lname"></label>
+                    <input placeholder="Last Name:" type="text" id="lname" name="lname" required="true" size="45">
+                </div>
+                <div class="formInput debug">
+                    <label class="debug"></label>
+                    <input placeholder="Email Address:" type="email" name="email" required="true" size="45">
+                </div>
+            <br>
+            <label class="formInput"></label><textarea class="debug" name="message" placeholder="Enter Message..." required="true" rows="7" cols="62"></textarea>
             <br>
             <button type="submit">Send</button>
             </p>
