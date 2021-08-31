@@ -163,18 +163,18 @@ h2 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#contactSection {
+#contact {
     display: flex;
     justify-content: space-evenly;
     height: auto;
 
 }
 
-#contactSection h2 {
+#contact h2 {
     padding: 5% 0 0 0;
 }
 
-#contactSection button:hover {
+#contact button:hover {
     color: #E5E5E5;
     background-color: #00517B;
 }
@@ -188,6 +188,10 @@ input {
 
 .formInput {
     padding: 3% 0;
+}
+
+form button {
+    margin-left: 50%;
 }
 
 @media screen and (max-width: 990px) {
