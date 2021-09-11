@@ -21,6 +21,7 @@ main {
 }
 
 #logo {
+    animation: flicker 2s infinite alternate;
     font-family: 'Rock Salt', cursive;
     font-size: 4em;
     color: #00517B;
@@ -103,7 +104,7 @@ a:visited {
 }
 
 #myName {
-    animation: flicker 2s infinite alternate; 
+    /*animation: flicker 2s infinite alternate;*/
     letter-spacing: 7px;
     font-size: 9em;
     padding: 0;
